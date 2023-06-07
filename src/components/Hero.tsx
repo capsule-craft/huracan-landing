@@ -33,6 +33,8 @@ function Hero() {
                 // @ts-ignore
                 color="white"
                 variant="outlined"
+                target="_blank"
+                href="https://testnet.huracan.tech"
               >
                 Try Huracan &rarr;
               </Button>
