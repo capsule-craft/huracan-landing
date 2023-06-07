@@ -9,6 +9,7 @@ import { UseCases } from "./components/UseCases";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    // @ts-expect-error
     white: { main: "#fff" },
     primary: { main: "#0a7aea" },
     background: { default: "#0A1424" },
