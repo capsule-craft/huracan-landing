@@ -13,7 +13,7 @@
     "title": "It’s like a Sui Fullnode, On Crack",
     "body": "Huracan’s ETL-worker can ingest 3,000 objects per second using a single thread. Our entire data pipeline adds less than a second of latency compared to a Sui Fullnode. And it’s all performant, opensource Rust code.",
     "buttonText": "Check out Our Docs",
-    "buttonLink": "https://mainnet.huracan.tech",
+    "buttonLink": "#",
     "imageUrl": "/huracan2.png"
   },
   "Features": {

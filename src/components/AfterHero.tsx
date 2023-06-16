@@ -45,9 +45,13 @@ export function AfterHero({ data }: Props) {
                 variant="outlined"
                 target="_blank"
                 href={data.buttonLink}
+                disabled
               >
                 {data.buttonText} &rarr;
               </Button>
+              <Typography variant="body2" sx={{ fontSize: "12px", ml: 1, mt: 1 }}>
+                Coming Soon
+              </Typography>
             </Box>
           </Grid>
         </Grid>

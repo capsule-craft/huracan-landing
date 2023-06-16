@@ -26,7 +26,7 @@ export function Hero({ data, topBarData }: Props) {
       <Container>
         <Grid container>
           <Grid md={6} style={{ marginTop: "100px" }}>
-            <Typography sx={{ fontWeight: "bold", mb: 5 }} variant="h3">
+            <Typography sx={{ fontWeight: "bold", mb: 3 }} variant="h4">
               {data.title}
             </Typography>
 
