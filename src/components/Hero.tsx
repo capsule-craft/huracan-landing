@@ -3,7 +3,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Image from "mui-image";
 import { TopBar } from "./TopBar";
 
-function Hero() {
+export function Hero() {
   return (
     <Box
       sx={{ mb: 8 }}
@@ -16,13 +16,12 @@ function Hero() {
         <Grid container>
           <Grid md={6} style={{ marginTop: "100px" }}>
             <Typography sx={{ fontWeight: "bold", mb: 5 }} variant="h3">
-              Powerful and Efficient Object Indexer on the Sui Network
+              Powerful, Simple Read-API
             </Typography>
 
             <Typography variant="body1">
-              Huracan grants you effortless and real-time access to Sui objects and their states. Dive into a world of
-              seamless exploration and unleash the full potential of the Sui Network with our powerful indexer at your
-              fingertips.
+              Save yourself months of development time compared to building your own custom indexer; we’ve ingested all
+              of Sui mainnet, enriched it, and made it queryable behind a powerful and simple GraphQL API.
             </Typography>
 
             <Box sx={{ mb: 5, mt: 3 }}>
@@ -34,9 +33,9 @@ function Hero() {
                 color="white"
                 variant="outlined"
                 target="_blank"
-                href="https://testnet.huracan.tech"
+                href="https://mainnet.huracan.tech"
               >
-                Try Huracan &rarr;
+                Tryout the Playground &rarr;
               </Button>
             </Box>
           </Grid>
@@ -44,7 +43,7 @@ function Hero() {
           <Grid container md={6}>
             <Grid md={3} />
             <Grid xs={12} sm={12} md={9}>
-              <Image style={{ margin: "auto", display: "block", height: "unset" }} src="/huracan.png" />
+              <Image style={{ margin: "auto", display: "block", height: "unset" }} src="/huracan1.png" />
             </Grid>
           </Grid>
         </Grid>
@@ -52,5 +51,3 @@ function Hero() {
     </Box>
   );
 }
-
-export { Hero };

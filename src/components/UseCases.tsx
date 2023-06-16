@@ -6,14 +6,14 @@ export function UseCases() {
   const data = [
     "On-Chain Games",
     "NFT Marketplaces",
-    "DeFi Dashboards",
-    "Token Monitoring Tools",
-    "NFT Management Tools",
-    "Object Explorers",
+    "DeFi Apps",
+    "Token Gating",
+    "Blockchain Explorers",
+    "Crypto Payments",
     "...And Many More",
   ];
 
-  const features = data.map((usecase) => (
+  const usecases = data.map((usecase) => (
     <div style={{}}>
       <CheckCircle sx={{ fontSize: "14px" }} htmlColor="#fff" />
       &nbsp; &nbsp;
@@ -31,15 +31,20 @@ export function UseCases() {
 
           <Grid container mdOffset={3} md={6}>
             <Typography variant="body1">
-              Leveraging the power of Huracan opens up a wide range of possibilities for building impactful apps. Some
-              app ideas are listed below:
+              Leveraging the power of Huracan opens up a wide range of possibilities for building impactful apps.
             </Typography>
           </Grid>
         </Container>
 
         <Container>
           <Grid container xs md={10} mdOffset={1}>
-            <Grid spacing={2}>{features}</Grid>
+            <Grid spacing={2}>
+              <Typography variant="body1" sx={{ mb: 2, fontWeight: "bold" }}>
+                Huracan is Custom-Cuilt For:
+              </Typography>
+
+              {usecases}
+            </Grid>
           </Grid>
         </Container>
       </Box>

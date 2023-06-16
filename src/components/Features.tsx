@@ -2,27 +2,27 @@ import { Typography, Container, ListItem, ListItemAvatar, Avatar, ListItemText, 
 import { Update, Layers, EditAttributesOutlined, Api } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 
-function Features() {
+export function Features() {
   const data = [
     {
-      title: "GraphQL Endpoint",
+      title: "GraphQL Subscriptions",
       icon: Api,
-      text: "Efficiently query and retrieve objects through our GraphQL endpoint, streamlining data manipulation and retrieval.",
+      text: "Run a query, display a view, then refresh the results in real-time! Smooth as butter, thanks to persistent websocket connections pushing live Sui state-updates right into your client-app.",
     },
     {
-      title: "Realtime Updates",
+      title: "Ownership",
       icon: Update,
-      text: " Easily stream objects in real time, receiving live updates to build applications that react in real-time to object updates.",
+      text: "Find every object your users own, even if they’re locked away in a kiosk on the other side of the planet. No need to understand complex, module-specific ownership logic! Phew.",
     },
     {
-      title: "Custom GraphQL Queries",
+      title: "Custom Queries",
       icon: EditAttributesOutlined,
-      text: "Craft precise, customized GraphQL queries to harness your application's object model and retrieve tailored data.",
+      text: "Does your genius new module have some specific logic you wish other apps could understand? No problem; our GraphQL server is opensource, so you can write your custom queries and resolvers, then submit a PR to make them available to the entire Sui ecosystem, or keep them to yourself and run your own forked GraphQL server while ingesting our live Sui data.",
     },
     {
-      title: "Retrieve Dynamic Fields",
+      title: "Filter, Sort, Group",
       icon: Layers,
-      text: "Effortlessly access objects dynamic fields, simplifying complex object handling and enabling seamless objects navigation.",
+      text: "Want to group a user’s objects by game? Sure. Want to sort a user’s objects by the last time they were last modified? No problem. Want to return only objects that are for sale, and sort them price? Easy peasy",
     },
   ];
 
@@ -65,5 +65,3 @@ function Features() {
     </>
   );
 }
-
-export { Features };
