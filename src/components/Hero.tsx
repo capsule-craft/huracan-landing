@@ -3,7 +3,18 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Image from "mui-image";
 import { TopBar } from "./TopBar";
 
-export function Hero() {
+interface Props {
+  topBarData: { title: string };
+  data: {
+    title: string;
+    body: string;
+    buttonText: string;
+    buttonLink: string;
+    imageUrl: string;
+  };
+}
+
+export function Hero({ data, topBarData }: Props) {
   return (
     <Box
       sx={{ mb: 8 }}
@@ -11,18 +22,15 @@ export function Hero() {
         background: "linear-gradient(#0E203B 0%, #0E203B 65%, transparent 100%)",
       }}
     >
-      <TopBar />
+      <TopBar data={topBarData} />
       <Container>
         <Grid container>
           <Grid md={6} style={{ marginTop: "100px" }}>
             <Typography sx={{ fontWeight: "bold", mb: 5 }} variant="h3">
-              Powerful, Simple Read-API
+              {data.title}
             </Typography>
 
-            <Typography variant="body1">
-              Save yourself months of development time compared to building your own custom indexer; we’ve ingested all
-              of Sui mainnet, enriched it, and made it queryable behind a powerful and simple GraphQL API.
-            </Typography>
+            <Typography variant="body1">{data.body}</Typography>
 
             <Box sx={{ mb: 5, mt: 3 }}>
               <Button
@@ -33,9 +41,9 @@ export function Hero() {
                 color="white"
                 variant="outlined"
                 target="_blank"
-                href="https://mainnet.huracan.tech"
+                href={data.buttonLink}
               >
-                Tryout the Playground &rarr;
+                {data.buttonText} &rarr;
               </Button>
             </Box>
           </Grid>
@@ -43,7 +51,7 @@ export function Hero() {
           <Grid container md={6}>
             <Grid md={3} />
             <Grid xs={12} sm={12} md={9}>
-              <Image style={{ margin: "auto", display: "block", height: "unset" }} src="/huracan1.png" />
+              <Image style={{ margin: "auto", display: "block", height: "unset" }} src={data.imageUrl} />
             </Grid>
           </Grid>
         </Grid>

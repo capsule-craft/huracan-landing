@@ -1,7 +1,17 @@
 import { Typography, Container, Box, Button } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 
-export function AfterHero() {
+interface Props {
+  data: {
+    title: string;
+    body: string;
+    buttonText: string;
+    buttonLink: string;
+    imageUrl: string;
+  };
+}
+
+export function AfterHero({ data }: Props) {
   return (
     <>
       <Container sx={{ my: 5, py: 4 }}>
@@ -9,7 +19,7 @@ export function AfterHero() {
           <Grid md={6} container sx={{ order: { xs: 2, md: 1 } }}>
             <Grid xs={6} xsOffset={3}>
               <img
-                src="/huracan2.png"
+                src={data.imageUrl}
                 style={{
                   height: "100%",
                   width: "100%",
@@ -20,14 +30,10 @@ export function AfterHero() {
 
           <Grid sx={{ mb: 5, order: { xs: 1, md: 2 } }} md={6}>
             <Typography variant="h4" sx={{ mb: 3, fontWeight: "bold" }}>
-              It’s like a Sui Fullnode, On Crack
+              {data.title}
             </Typography>
 
-            <Typography variant="body1">
-              Huracan’s ETL-worker can ingest 3,000 objects per second using a single thread. Our entire data pipeline
-              adds less than a second of latency compared to a Sui Fullnode. And it’s all performant, opensource Rust
-              code.
-            </Typography>
+            <Typography variant="body1">{data.body}</Typography>
 
             <Box sx={{ mb: 5, mt: 3 }}>
               <Button
@@ -38,9 +44,9 @@ export function AfterHero() {
                 color="white"
                 variant="outlined"
                 target="_blank"
-                href="https://mainnet.huracan.tech"
+                href={data.buttonLink}
               >
-                Checkout Our Docs &rarr;
+                {data.buttonText} &rarr;
               </Button>
             </Box>
           </Grid>

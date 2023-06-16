@@ -6,6 +6,8 @@ import { AfterHero } from "./components/AfterHero";
 import { Footer } from "./components/Footer";
 import { UseCases } from "./components/UseCases";
 
+import data from "./data/data.json";
+
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -21,11 +23,11 @@ export function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
 
-      <Hero />
-      <AfterHero />
-      <Features />
-      <UseCases />
-      <Footer />
+      <Hero data={data.Hero} topBarData={data.TopBar} />
+      <AfterHero data={data.AfterHero} />
+      <Features data={data.Features} />
+      <UseCases data={data.UseCases} />
+      <Footer data={data.Footer} />
     </ThemeProvider>
   );
 }

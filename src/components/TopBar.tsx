@@ -1,6 +1,12 @@
 import { AppBar, Toolbar, Container, Typography } from "@mui/material";
 
-export function TopBar() {
+interface Props {
+  data: {
+    title: string;
+  };
+}
+
+export function TopBar({ data }: Props) {
   return (
     <AppBar position="static" elevation={0} style={{ backgroundColor: "transparent" }}>
       <Container maxWidth="xl">
@@ -18,7 +24,7 @@ export function TopBar() {
               textDecoration: "none",
             }}
           >
-            Huracan
+            {data.title}
           </Typography>
         </Toolbar>
       </Container>

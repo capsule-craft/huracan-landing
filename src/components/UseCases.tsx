@@ -2,18 +2,17 @@ import { Typography, Container, Box } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
 
-export function UseCases() {
-  const data = [
-    "On-Chain Games",
-    "NFT Marketplaces",
-    "DeFi Apps",
-    "Token Gating",
-    "Blockchain Explorers",
-    "Crypto Payments",
-    "...And Many More",
-  ];
+interface Props {
+  data: {
+    title: string;
+    body: string;
+    listTitle: string;
+    list: string[];
+  };
+}
 
-  const usecases = data.map((usecase) => (
+export function UseCases({ data }: Props) {
+  const usecases = data.list.map((usecase) => (
     <div style={{}}>
       <CheckCircle sx={{ fontSize: "14px" }} htmlColor="#fff" />
       &nbsp; &nbsp;
@@ -26,13 +25,11 @@ export function UseCases() {
       <Box sx={{ py: 5 }} style={{ backgroundColor: "#0E203B " }}>
         <Container sx={{ textAlign: "center", mb: 5 }}>
           <Typography variant="h5" sx={{ mb: 1, fontWeight: "bold" }}>
-            Build With Huracan
+            {data.title}
           </Typography>
 
           <Grid container mdOffset={3} md={6}>
-            <Typography variant="body1">
-              Leveraging the power of Huracan opens up a wide range of possibilities for building impactful apps.
-            </Typography>
+            <Typography variant="body1">{data.body}</Typography>
           </Grid>
         </Container>
 
@@ -40,7 +37,7 @@ export function UseCases() {
           <Grid container xs md={10} mdOffset={1}>
             <Grid spacing={2}>
               <Typography variant="body1" sx={{ mb: 2, fontWeight: "bold" }}>
-                Huracan is Custom-Cuilt For:
+                {data.listTitle}
               </Typography>
 
               {usecases}
