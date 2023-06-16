@@ -5,14 +5,14 @@
   "Hero": {
     "title": "Powerful, Simple Read-API",
     "body": "Save yourself months of development time compared to building your own custom indexer; we’ve ingested all of Sui mainnet, enriched it, and made it queryable behind a powerful and simple GraphQL API.",
-    "buttonText": "Tryout the Playground",
+    "buttonText": "Try out the Playground",
     "buttonLink": "https://mainnet.huracan.tech",
     "imageUrl": "/huracan1.png"
   },
   "AfterHero": {
     "title": "It’s like a Sui Fullnode, On Crack",
     "body": "Huracan’s ETL-worker can ingest 3,000 objects per second using a single thread. Our entire data pipeline adds less than a second of latency compared to a Sui Fullnode. And it’s all performant, opensource Rust code.",
-    "buttonText": "Checkout Our Docs",
+    "buttonText": "Check out Our Docs",
     "buttonLink": "https://mainnet.huracan.tech",
     "imageUrl": "/huracan2.png"
   },
