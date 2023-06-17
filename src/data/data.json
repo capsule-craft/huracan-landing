@@ -3,17 +3,17 @@
     "title": "Huracan"
   },
   "Hero": {
-    "title": "Powerful, Simple Read-API",
+    "title": "All Sui Objects Exposed Via GraphQL",
     "body": "Save yourself months of development time compared to building your own custom indexer; we’ve ingested all of Sui mainnet, enriched it, and made it queryable behind a powerful and simple GraphQL API.",
     "buttonText": "Try out the Playground",
     "buttonLink": "https://mainnet.huracan.tech",
     "imageUrl": "/huracan1.png"
   },
   "AfterHero": {
-    "title": "It’s like a Sui Fullnode, On Crack",
+    "title": "High-Performance Data Pipeline for Sui",
     "body": "Huracan’s ETL-worker can ingest 3,000 objects per second using a single thread. Our entire data pipeline adds less than a second of latency compared to a Sui Fullnode. And it’s all performant, opensource Rust code.",
-    "buttonText": "Check out Our Docs",
-    "buttonLink": "#",
+    "buttonText": "Documentation",
+    "buttonLink": "https://mainnet.huracan.tech",
     "imageUrl": "/huracan2.png"
   },
   "Features": {
@@ -25,9 +25,9 @@
         "text": "Run a query, display a view, then refresh the results in real-time! Smooth as butter, thanks to persistent websocket connections pushing live Sui state-updates right into your client-app."
       },
       {
-        "title": "Ownership",
+        "title": "Kiosk Supported",
         "icon": "Update",
-        "text": "Find every object your users own, even if they’re locked away in a kiosk on the other side of the planet. No need to understand complex, module-specific ownership logic! Phew."
+        "text": "Find every object your users own, even if they’re locked away in a Kiosk on the other side of the planet. No need to understand complex, module-specific ownership logic! Phew."
       },
       {
         "title": "Custom Queries",
@@ -43,8 +43,8 @@
   },
   "UseCases": {
     "title": "Build With Huracan",
-    "body": "Leveraging the power of Huracan opens up a wide range of possibilities for building impactful apps.",
-    "listTitle": "Huracan is Custom-Cuilt For:",
+    "body": "Leveraging the power of Huracan opens up a wide range of possibilities for building real-time apps.",
+    "listTitle": "Use Huracan to Build:",
     "list": [
       "On-Chain Games",
       "NFT Marketplaces",
