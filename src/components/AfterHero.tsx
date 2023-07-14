@@ -50,9 +50,9 @@ export function AfterHero({ data }: Props) {
               >
                 {data.buttonText} &rarr;
               </Button>
-              <Typography variant="body2" sx={{ fontSize: "12px", ml: 1, mt: 1 }}>
+              {/* <Typography variant="body2" sx={{ fontSize: "12px", ml: 1, mt: 1 }}>
                 Coming Soon
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Grid>
