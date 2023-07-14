@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Huracan",
+  "tagline": "All Sui Objects Exposed Via GraphQL",
+  "favicon": "img/logo.png",
+  "url": "https://huracan.tech",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "capsule-craft",
+  "projectName": "huracan",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -27,11 +27,11 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/bytedeveloper/Documents/Projects/Capsules/Huracan/landing/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/capsule-craft/huracan-landing/"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/capsule-craft/huracan-landing/"
         },
         "theme": {
           "customCss": "/Users/bytedeveloper/Documents/Projects/Capsules/Huracan/landing/src/css/custom.css"
@@ -40,12 +40,12 @@ export default {
     ]
   ],
   "themeConfig": {
-    "image": "img/docusaurus-social-card.jpg",
+    "image": "img/huracan1.png",
     "navbar": {
-      "title": "My Site",
+      "title": "Huracan",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "Huracan Logo",
+        "src": "img/logo.png"
       },
       "items": [
         {
@@ -60,7 +60,7 @@ export default {
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/capsule-craft/huracan-landing",
           "label": "GitHub",
           "position": "right"
         }
@@ -88,11 +88,11 @@ export default {
             },
             {
               "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "href": "https://discordapp.com/invite/huracan"
             },
             {
               "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "href": "https://twitter.com/Sui_Huracan"
             }
           ]
         },
@@ -105,7 +105,7 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/capsule-craft/huracan-landing"
             }
           ]
         }
@@ -317,8 +317,8 @@ export default {
       ]
     },
     "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
+      "defaultMode": "dark",
+      "disableSwitch": true,
       "respectPrefersColorScheme": false
     },
     "docs": {

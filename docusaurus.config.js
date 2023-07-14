@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Huracan",
   tagline: "All Sui Objects Exposed Via GraphQL",
-  favicon: "img/huracan1.png",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
   url: "https://huracan.tech",
@@ -39,14 +39,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/capsule-craft/huracan-landing/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/capsule-craft/huracan-landing/",
         },
         theme: {
@@ -60,12 +56,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/huracan1.png",
       navbar: {
         title: "Huracan",
         logo: {
           alt: "Huracan Logo",
-          src: "img/huracan1.png",
+          src: "img/logo.png",
         },
         items: [
           {
@@ -128,8 +124,12 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: darkCodeTheme,
-        // darkTheme: darkCodeTheme,
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
       },
     }),
 };
