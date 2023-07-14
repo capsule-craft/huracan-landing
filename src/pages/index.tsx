@@ -1,12 +1,19 @@
+import React from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Hero } from "./components/Hero";
-import { Features } from "./components/Features";
-import { AfterHero } from "./components/AfterHero";
-import { Footer } from "./components/Footer";
-import { UseCases } from "./components/UseCases";
+import { Hero } from "../components/Hero";
+import { Features } from "../components/Features";
+import { AfterHero } from "../components/AfterHero";
+import { Footer } from "../components/Footer";
+import { UseCases } from "../components/UseCases";
 
-import data from "./data/data.json";
+import data from "../data/data.json";
+
+import "./index.module.css";
 
 const darkTheme = createTheme({
   palette: {
@@ -18,7 +25,7 @@ const darkTheme = createTheme({
   },
 });
 
-export function App() {
+export default function Home(): JSX.Element {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />

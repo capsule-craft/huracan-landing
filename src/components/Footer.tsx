@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Typography, Container } from "@mui/material";
 
 interface Props {
@@ -5,6 +7,7 @@ interface Props {
     name: string;
   };
 }
+
 export function Footer({ data }: Props) {
   return (
     <>

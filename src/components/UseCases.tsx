@@ -1,3 +1,4 @@
+import React from "react";
 import { Typography, Container, Box } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";

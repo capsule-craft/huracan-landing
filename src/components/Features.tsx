@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Typography, Container, ListItem, ListItemAvatar, Avatar, ListItemText, Box } from "@mui/material";
 import * as MaterialIcon from "@mui/icons-material";
 import Grid from "@mui/material/Unstable_Grid2";
@@ -14,7 +16,6 @@ interface Props {
 }
 
 export function Features({ data }: Props) {
-  // @ts-expect-error
   const featuresData = data.list.map((item) => ({ ...item, icon: MaterialIcon[item.icon] }));
 
   const features = featuresData.map((i) => (

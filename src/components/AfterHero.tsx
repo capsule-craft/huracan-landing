@@ -1,5 +1,7 @@
+import React from "react";
 import { Typography, Container, Box, Button } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
+import Link from "@docusaurus/Link";
 
 interface Props {
   data: {
@@ -40,12 +42,11 @@ export function AfterHero({ data }: Props) {
                 style={{ borderRadius: 20 }}
                 size="large"
                 disableElevation={true}
+                LinkComponent={Link}
                 // @ts-ignore
                 color="white"
                 variant="outlined"
-                target="_blank"
                 href={data.buttonLink}
-                disabled
               >
                 {data.buttonText} &rarr;
               </Button>
