@@ -16,17 +16,11 @@ interface Props {
 export function AfterHero({ data }: Props) {
   return (
     <>
-      <Container sx={{ my: 5, py: 4 }}>
+      <Container sx={{ pb: 8, py: 4 }}>
         <Grid container>
           <Grid md={6} container sx={{ order: { xs: 2, md: 1 } }}>
             <Grid xs={6} xsOffset={3}>
-              <img
-                src={data.imageUrl}
-                style={{
-                  height: "100%",
-                  width: "100%",
-                }}
-              />
+              <img src={data.imageUrl} style={{ height: "100%", width: "100%" }} />
             </Grid>
           </Grid>
 

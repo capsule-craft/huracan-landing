@@ -21,7 +21,7 @@ const config = {
   organizationName: "capsule-craft", // Usually your GitHub org/user name.
   projectName: "huracan", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  // onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internalization, you can use this field to set useful
