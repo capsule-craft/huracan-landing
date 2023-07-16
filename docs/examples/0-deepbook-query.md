@@ -6,6 +6,29 @@ sidebar_position: 3
 
 Query and analyze data from Deepbook pools using Huracan.
 
+## Retrieve all deepbook pools
+
+```graphql
+query Objects($args: ObjectArgsInput!) {
+  objects(args: $args) {
+    id
+    fields
+    digest
+  }
+}
+```
+
+GraphQL Variables:
+
+```json
+{
+  "args": {
+    "type": "0xdee9::clob_v2::Pool<(.*)>",
+    "limit": 10
+  }
+}
+```
+
 ## Retrieve pools of a specific type
 
 ```graphql
