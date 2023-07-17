@@ -12,8 +12,10 @@ Query and analyze data from Deepbook pools using Huracan.
 query Objects($args: ObjectArgsInput!) {
   objects(args: $args) {
     id
+    type {
+      generics
+    }
     fields
-    digest
   }
 }
 ```
@@ -35,8 +37,10 @@ GraphQL Variables:
 query Objects($args: ObjectArgsInput!) {
   objects(args: $args) {
     id
+    type {
+      generics
+    }
     fields
-    digest
   }
 }
 ```
@@ -57,8 +61,10 @@ GraphQL Variables:
 query Objects($args: ObjectArgsInput!) {
   objects(args: $args) {
     id
+    type {
+      generics
+    }
     fields
-    digest
   }
 }
 ```
