@@ -41,10 +41,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/capsule-craft/huracan-landing/",
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/capsule-craft/huracan-landing/",
-        },
+
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -70,7 +67,6 @@ const config = {
             position: "left",
             label: "Tutorial",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/capsule-craft/huracan-landing",
             label: "GitHub",
