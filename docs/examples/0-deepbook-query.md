@@ -29,7 +29,7 @@ GraphQL Variables:
 }
 ```
 
-## Retrieve pools of a specific type
+## Retrieve all pools for a specific trading-pair
 
 ```graphql
 query Objects($args: ObjectArgsInput!) {
@@ -51,7 +51,7 @@ GraphQL Variables:
 }
 ```
 
-## Retrieve pools with multiple types
+## Retrieve all pools matching a set of trading-pairs
 
 ```graphql
 query Objects($args: ObjectArgsInput!) {
@@ -70,7 +70,7 @@ GraphQL Variables
   "args": {
     "types": [
       "0xdee9::clob_v2::Pool<0x2::sui::SUI, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>",
-      "0xdee9::clob_v2::Pool<0x2::sui::SUI, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>"
+      "0xdee9::clob_v2::Pool<0xbc3a676894871284b3ccfb2eec66f428612000e2a6e6d23f592ce8833c27c973::coin::COIN, 0x5d4b302506645c37ff133b98c4b50a5ae14841659738d6d733d59d0d217a93bf::coin::COIN>"
     ]
   }
 }
